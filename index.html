@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sugarland Theaters Seat Booking</h1>
+
+        <!-- Movie Select Dropdown -->
+        <label for="movie">Pick a movie:</label>
+        <select id="movie">
+            <option value="10">Avengers: Endgame ($10)</option>
+            <option value="12">Joker ($12)</option>
+            <option value="8">Toy Story 4 ($8)</option>
+            <option value="9">The Lion King ($9)</option>
+        </select>
+
+        <!-- Theater Screen -->
+        <div class="screen"></div>
+
+        <!-- Seats Grid -->
+        <div class="seating-area">
+            <div class="row">
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <p><span class="seat available"></span> Available</p>
+            <p><span class="seat selected"></span> Selected</p>
+            <p><span class="seat occupied"></span> Occupied</p>
+        </div>
+
+        <!-- Seat Info -->
+        <p class="text">
+            You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+        </p>
+
+        <button id="confirm">Confirm</button>
+        <button id="delete">Delete</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
